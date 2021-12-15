@@ -11,7 +11,7 @@ const cache: {
 } = {}
 
 function getCacheKey(url: string) {
-  let key = url.replace(/\?.*/, '')
+  let key = url
 
   // font resourse
   if (/ttf|otf|eot|woff2?/i.test(key)) {
